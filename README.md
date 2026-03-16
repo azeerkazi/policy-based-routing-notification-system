@@ -199,7 +199,7 @@ export GMAIL_APP_PASSWORD=xxxx
 | Async Processing    | AWS SQS                     | ✅ Decoupling & durability<br>❌ Eventual consistency                           |
 | Queue Strategy      | One SQS per channel         | ✅ Isolation & retries<br>❌ More infrastructure components                     |
 | Worker Model        | AWS Lambda                  | ✅ No server management<br>❌ Cold starts                                       |
-| Lambda Batch Size   | Batch size = 1              | ✅ Safe retries<br>❌ Lower throughput                                          |
+| Lambda Batch Size   | Batch size = 5              | ✅ Safe retries<br>❌ Lower throughput                                          |
 | Failure Handling    | Retry + DLQ                 | ✅ Message durability<br>❌ DLQ monitoring required                             |
 | State Tracking      | Notification DB             | ✅ Observability & audit trail<br>❌ Extra write operations                     |
 | Channel Abstraction | Interface-based design      | ✅ Easy to add new channels<br>❌ Slight abstraction overhead                   |
