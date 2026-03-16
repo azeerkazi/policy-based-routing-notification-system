@@ -1,0 +1,63 @@
+{
+  "src/main/java/com/notification/exception/RoutingRuleNotFoundException.java": {
+    "filename": "RoutingRuleNotFoundException.java",
+    "path": "src/main/java/com/notification/exception/RoutingRuleNotFoundException.java",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "d4194f": {
+        "user": "Mohammed Azeer",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1773560871,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "chat",
+        "type": "applyChanges",
+        "extraContext": {},
+        "hash": "0e98b264",
+        "messageId": "system_bd49b250-2042-11f1-827e-7db78fbc995d",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "d4194f",
+        "hash": "edd8fb44",
+        "encoded": "package%20com.notification.exception;",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "d4194f",
+        "hash": "4f5ad943",
+        "encoded": "public%20class%20SqsPublishException%20extends%20RuntimeException%20%7B",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "d4194f",
+        "hash": "5b24a4e1",
+        "encoded": "public%20SqsPublishException(String%20queueUrl,%20Throwable%20cause)%20%7B",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "d4194f",
+        "hash": "9ee135ac",
+        "encoded": "super(%22Failed%20to%20publish%20message%20to%20SQS%20queue:%20%22%20+%20queueUrl,%20cause);",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "d4194f",
+        "hash": "03469704",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "d4194f",
+        "hash": "102658a5",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

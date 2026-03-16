@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: routing-service
+  cache:
+    type: caffeine
+  devtools:
+    restart:
+      exclude: com/notification/model/**
+
+server:
+  port: 8080
+
+aws:
+  region: us-east-1
+
+dynamodb:
+  tables:
+    messages: messages
+    routing-rules: routing_rules
+    user-preferences: user_preferences
+
+sqs:
+  email-queue-url: https://sqs.us-east-1.amazonaws.com/905418067832/email-queue
+  sms-queue-url: https://sqs.us-east-1.amazonaws.com/905418067832/sms-queue
+
+cache:
+  rules-ttl-minutes: 5
+  rules-max-size: 500
+
+logging:
+  level:
+    com.notification: DEBUG
+    software.amazon.awssdk: WARN
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

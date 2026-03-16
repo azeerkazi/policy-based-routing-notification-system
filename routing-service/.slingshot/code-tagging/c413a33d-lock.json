@@ -1,0 +1,39 @@
+{
+  "src/main/java/com/notification/repository/RoutingRuleRepository.java": {
+    "filename": "RoutingRuleRepository.java",
+    "path": "src/main/java/com/notification/repository/RoutingRuleRepository.java",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "e96cf5": {
+        "user": "Mohammed Azeer",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1773560871,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "chat",
+        "type": "applyChanges",
+        "extraContext": {},
+        "hash": "6646dc70",
+        "messageId": "system_bd49b250-2042-11f1-827e-7db78fbc995d",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "21": {
+        "chunkId": "e96cf5",
+        "hash": "4b5cc20d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "e96cf5",
+        "hash": "42f7c135",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

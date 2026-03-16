@@ -1,0 +1,249 @@
+{
+  "src/main/java/com/notification/routing/MessageRouter.java": {
+    "filename": "MessageRouter.java",
+    "path": "src/main/java/com/notification/routing/MessageRouter.java",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "973d19": {
+        "user": "Mohammed Azeer",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1773560872,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "chat",
+        "type": "applyChanges",
+        "extraContext": {},
+        "hash": "6b810945",
+        "messageId": "system_bd49b250-2042-11f1-827e-7db78fbc995d",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "973d19",
+        "hash": "d59a0940",
+        "encoded": "package%20com.notification.channel;",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "973d19",
+        "hash": "74dee86e",
+        "encoded": "import%20com.notification.enums.ChannelType;",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "973d19",
+        "hash": "7edeaf89",
+        "encoded": "import%20lombok.extern.slf4j.Slf4j;",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "973d19",
+        "hash": "42f4319c",
+        "encoded": "import%20org.springframework.stereotype.Component;",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "973d19",
+        "hash": "0b47b968",
+        "encoded": "import%20java.util.List;",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "973d19",
+        "hash": "330a1d52",
+        "encoded": "import%20java.util.Map;",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "973d19",
+        "hash": "32315aa0",
+        "encoded": "import%20java.util.Set;",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "973d19",
+        "hash": "db13db77",
+        "encoded": "import%20java.util.function.Function;",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "973d19",
+        "hash": "f59edb6c",
+        "encoded": "import%20java.util.stream.Collectors;",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "973d19",
+        "hash": "d3f583bb",
+        "encoded": "@Slf4j",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "973d19",
+        "hash": "0e9e3bf4",
+        "encoded": "@Component",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "973d19",
+        "hash": "148c40bf",
+        "encoded": "public%20class%20ChannelRegistry%20%7B",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "973d19",
+        "hash": "7cdffeae",
+        "encoded": "private%20final%20Map%3CChannelType,%20Channel%3E%20channels;",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "973d19",
+        "hash": "d7382795",
+        "encoded": "public%20ChannelRegistry(List%3CChannel%3E%20channelBeans)%20%7B",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "973d19",
+        "hash": "ec70e313",
+        "encoded": "this.channels%20=%20channelBeans.stream()",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "973d19",
+        "hash": "218c1310",
+        "encoded": ".collect(Collectors.toMap(Channel::getChannelType,%20Function.identity()));",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "973d19",
+        "hash": "167af879",
+        "encoded": "log.info(%22Registered%20channels:%20%7B%7D%22,%20channels.keySet());",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "973d19",
+        "hash": "7b3531ab",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "973d19",
+        "hash": "7deaffca",
+        "encoded": "public%20Channel%20getChannel(ChannelType%20type)%20%7B",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "973d19",
+        "hash": "37ebcd98",
+        "encoded": "Channel%20channel%20=%20channels.get(type);",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "973d19",
+        "hash": "e9488d1a",
+        "encoded": "if%20(channel%20==%20null)%20%7B",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "973d19",
+        "hash": "80cba759",
+        "encoded": "throw%20new%20IllegalArgumentException(%22No%20channel%20implementation%20found%20for%20type:%20%22%20+%20type);",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "973d19",
+        "hash": "7721e417",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "973d19",
+        "hash": "e0cd0895",
+        "encoded": "return%20channel;",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "973d19",
+        "hash": "43353d17",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "973d19",
+        "hash": "a359a49d",
+        "encoded": "public%20boolean%20isRegistered(ChannelType%20type)%20%7B",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "973d19",
+        "hash": "91000f40",
+        "encoded": "return%20channels.containsKey(type);",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "973d19",
+        "hash": "dfad4947",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "973d19",
+        "hash": "95f0184c",
+        "encoded": "public%20Set%3CChannelType%3E%20getRegisteredChannels()%20%7B",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "973d19",
+        "hash": "90579dc0",
+        "encoded": "return%20channels.keySet();",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "973d19",
+        "hash": "4771cdac",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "973d19",
+        "hash": "27919685",
+        "encoded": "public%20List%3CChannelType%3E%20filterRegistered(List%3CChannelType%3E%20channelTypes)%20%7B",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "973d19",
+        "hash": "391df2ad",
+        "encoded": "return%20channelTypes.stream()",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "973d19",
+        "hash": "b8216d7c",
+        "encoded": ".filter(this::isRegistered)",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "973d19",
+        "hash": "062aa1f0",
+        "encoded": ".collect(Collectors.toList());",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "973d19",
+        "hash": "8b687a61",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "973d19",
+        "hash": "f9b2449c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

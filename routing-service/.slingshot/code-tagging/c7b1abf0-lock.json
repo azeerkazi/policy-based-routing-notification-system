@@ -1,0 +1,57 @@
+{
+  "src/main/java/com/notification/routing/RuleEvaluator.java": {
+    "filename": "RuleEvaluator.java",
+    "path": "src/main/java/com/notification/routing/RuleEvaluator.java",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "cb78e3": {
+        "user": "Mohammed Azeer",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1773560871,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "chat",
+        "type": "applyChanges",
+        "extraContext": {},
+        "hash": "126d4b00",
+        "messageId": "system_bd49b250-2042-11f1-827e-7db78fbc995d",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "cb78e3",
+        "hash": "b19f1e23",
+        "encoded": "package%20com.notification.routing;",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "cb78e3",
+        "hash": "6992c426",
+        "encoded": "import%20com.notification.dto.NotificationRequest;",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "cb78e3",
+        "hash": "e16cb930",
+        "encoded": "public%20interface%20MessageRouter%20%7B",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "cb78e3",
+        "hash": "e68e49fd",
+        "encoded": "void%20route(NotificationRequest%20request);",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "cb78e3",
+        "hash": "03469704",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

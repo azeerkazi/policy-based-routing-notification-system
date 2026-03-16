@@ -1,0 +1,149 @@
+{
+  "src/main/java/com/notification/channel/ChannelRegistry.java": {
+    "filename": "ChannelRegistry.java",
+    "path": "src/main/java/com/notification/channel/ChannelRegistry.java",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "d0d4d5": {
+        "user": "Mohammed Azeer",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1773560663,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "chat",
+        "type": "insertCode",
+        "extraContext": {},
+        "hash": "264b9d06",
+        "messageId": "system_bd49b250-2042-11f1-827e-7db78fbc995d",
+        "codeBlockId": null,
+        "isActive": false
+      },
+      "8a0ed2": {
+        "user": "Mohammed Azeer",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1773560786,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "chat",
+        "type": "applyChanges",
+        "extraContext": {},
+        "hash": "264b9d06",
+        "messageId": "0fd75e17-0f62-4683-8502-ae4ec2394ee6",
+        "codeBlockId": null,
+        "isActive": true
+      },
+      "3fd02f": {
+        "user": "Mohammed Azeer",
+        "model": "claude-sonnet-4@20250514",
+        "timestamp": 1773560811,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.2.0",
+        "source": "chat",
+        "type": "pasteCode",
+        "extraContext": {},
+        "hash": "6b810945",
+        "messageId": "system_bd49b250-2042-11f1-827e-7db78fbc995d",
+        "codeBlockId": "system_bd49b250-2042-11f1-827e-7db78fbc995d-Codeblock-6",
+        "isActive": true
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "3fd02f",
+        "hash": "d59a0940",
+        "encoded": "package%20com.notification.channel;",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "3fd02f",
+        "hash": "7f83b458",
+        "encoded": "import%20org.springframework.stereotype.Component;",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "3fd02f",
+        "hash": "6d19e523",
+        "encoded": "import%20java.util.List;",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "3fd02f",
+        "hash": "68fc001e",
+        "encoded": "import%20java.util.Map;",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "3fd02f",
+        "hash": "339e2e06",
+        "encoded": "@Component",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "3fd02f",
+        "hash": "3312c856",
+        "encoded": "public%20class%20ChannelRegistry%20%7B",
+        "prevChunkIds": [
+          "8a0ed2"
+        ]
+      },
+      "20": {
+        "chunkId": "8a0ed2",
+        "hash": "acbf036f",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "d0d4d5"
+        ]
+      },
+      "22": {
+        "chunkId": "3fd02f",
+        "hash": "ee3768c5",
+        "encoded": "public%20Channel%20getChannel(ChannelType%20type)%20%7B",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "3fd02f",
+        "hash": "6cca30c2",
+        "encoded": "if%20(channel%20==%20null)%20%7B",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "8a0ed2",
+        "hash": "e256b81a",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "d0d4d5"
+        ]
+      },
+      "27": {
+        "chunkId": "3fd02f",
+        "hash": "839b27b0",
+        "encoded": "return%20channel;",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "8a0ed2",
+        "hash": "46b23985",
+        "encoded": "%7D",
+        "prevChunkIds": [
+          "d0d4d5"
+        ]
+      },
+      "32": {
+        "chunkId": "8a0ed2",
+        "hash": "699fd80f",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "3fd02f",
+        "hash": "0e2c0edc",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
